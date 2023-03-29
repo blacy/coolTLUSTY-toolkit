@@ -33,7 +33,5 @@ absorption cross sections and the chemical abundance table)
  abundance table, or a Sonora-Bobcat format abundance table. 
 
 The absorption cross sections for individual absorbers can be obtained from this zenodo data-set: 
-They are 25 GB when decompressed and include: H2O, CH4, NH3, PH3, H2S, CO, CO2, HCN, TiO, VO, SiO, MgH, FeH, CaH, CrH, TiH, and H2, 
-as well as Allard 2016 and Allard 2019 Na and K resonant doublets. If you make use of them, please cite Lacy & Burrows 2023 which describes
-their calculation with exocross in the appendix, as well as the original work done to generate line lists which are included as part of the 
-hdf5 headers for each molecule's file.
+
+They are 25 GB when decompressed and include: H2O, CH4, NH3, PH3, H2S, CO, CO2, HCN, TiO, VO, SiO, MgH, FeH, CaH, CrH, TiH, and H2, as well as Allard 2016 and Allard 2019 Na and K resonant doublets. SO2 and the Hargreaves CH4 are in progress. If you make use of these, please cite both Lacy & Burrows 2023 which describes their calculation with exocross, as well as the original work done to generate line lists which are included as part of the hdf5 header for each molecule's file.
