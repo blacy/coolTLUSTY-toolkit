@@ -1,6 +1,8 @@
 # coolTLUSTY-toolkit
-python tools I made for post-processing 1d radiative-convective structure and spectral models in the coolTLUSTY output format, as
-well as tools used in the process of creating updated molecular absorption cross sections using ExoMol and exocross.  
+Python tools I made for post-processing 1d radiative-convective structure and spectral models in the coolTLUSTY output format, as
+well as tools used to create updated molecular absorption cross sections with exocross.  
+
+# Contents:
 
 **coolTLUSTY_model_class.py**: defines a python "model" object with the following functions, initiated from a matching structure 
 and spectral file in the format output by coolTLUSTY ("fort.20" and "fort.21" from a run of coolTLUSTY) 
@@ -31,8 +33,10 @@ absorption cross sections and the chemical abundance table)
 
 **construct_coolTLUSTY_opacity_table.py**: script to construct an opacity table for use with coolTLUSTY given either a coolTLUSTY-format 
  abundance table, or a Sonora-Bobcat format abundance table. 
+ 
+ **exocross_scripts**: directory containing some examples of scripts to download data from ExoMol, create exocross input files, and submit calculations for a grid of temperatures and pressures to run on one of the Princeton computing clusters (uses slurm for job scheduling). These are mostly for my future reference & to make my methods transparent, but could perhaps be useful to others wanting to calculate their own cross sections.
 
----------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
 
 The **absorption cross sections for individual molecules** can be obtained from this zenodo data-set: << fill in once it's ready >>
 
