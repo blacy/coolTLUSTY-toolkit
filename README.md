@@ -5,23 +5,23 @@ well as in the process of creating updated molecular absorption cross sections f
 coolTLUSTY_model_class.py: defines a python "model" object with the following functions, initiated from a matching structure  
                            and spectral file in the format output by coolTLUSTY ("fort.20" and "fort.21" from a run of coolTLUSTY) 
                            
-                          (1) quickly pull up some standard figures showing atmospheric structure and associated spectrum
+    (1) quickly pull up some standard figures showing atmospheric structure and associated spectrum
 
-                          (2) back out chemical abundance profiles for either equilibrium chemistry or quenching chemistry 
-                          for CO-CH4 and N2-NH3 (requires the chemical abundance table utilized in the coolTLUSTY run)
-                          
-                          (3) infer the location and opacity of clouds, assuming you implemented them in the same way as 
-                          Lacy & Burrows 2023
+    (2) back out chemical abundance profiles for either equilibrium chemistry or quenching chemistry 
+    for CO-CH4 and N2-NH3 (requires the chemical abundance table utilized in the coolTLUSTY run)
 
-                          (4) calculate a contribution function for each wavelength or an average contribution function for a 
-                          photometric bandpass (requires the opacity table utilized in the coolTLUSTY run for equilibrium chemistry,
-                          requires opacity tables and abundance table for quenched chemistry)
+    (3) infer the location and opacity of clouds, assuming you implemented them in the same way as 
+    Lacy & Burrows 2023
 
-                          (5) approximately identify spectral features based on the dominant opacity source at the pressure 
-                          layer where tau = 2/3 for each wavelength. NOTE that this is only an approximation! When multiple 
-                          pressure layers dominated by different opacity sources are contributing nearly equal amounts of flux 
-                          to a given wavelength, this approach could miss some nuances (requires separate molecule-by-molecule  
-                          absorption cross sections and the chemical abundance table)
+    (4) calculate a contribution function for each wavelength or an average contribution function for a 
+    photometric bandpass (requires the opacity table utilized in the coolTLUSTY run for equilibrium chemistry,
+    requires opacity tables and abundance table for quenched chemistry)
+
+    (5) approximately identify spectral features based on the dominant opacity source at the pressure 
+    layer where tau = 2/3 for each wavelength. NOTE that this is only an approximation! When multiple 
+    pressure layers dominated by different opacity sources are contributing nearly equal amounts of flux 
+    to a given wavelength, this approach could miss some nuances (requires separate molecule-by-molecule  
+    absorption cross sections and the chemical abundance table)
 
 coolTLUSTY_input_tables.py: python module containing tools for reading and interpolating within coolTLUSTY-format
                             abundance tables, gas-phase opacity tables, rayleigh scattering tables, and mie tables
