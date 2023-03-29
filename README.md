@@ -22,8 +22,7 @@ requires opacity tables and abundance table for quenched chemistry)
 (5) approximately identify spectral features based on the dominant opacity source at the pressure 
 layer where tau = 2/3 for each wavelength. NOTE that this is only an approximation! When multiple 
 pressure layers dominated by different opacity sources are contributing nearly equal amounts of flux 
-to a given wavelength, this approach could miss some nuances (requires separate molecule-by-molecule  
-absorption cross sections and the chemical abundance table)
+to a given wavelength, this approach could miss some nuances (requires separate molecule-by-molecule absorption cross sections and the chemical abundance table)
 
 **coolTLUSTY_input_tables.py**: python module containing tools for reading and interpolating within coolTLUSTY-format abundance tables, gas-phase opacity tables, rayleigh scattering tables, and mie tables
 
