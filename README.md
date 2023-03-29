@@ -27,7 +27,7 @@ absorption cross sections and the chemical abundance table)
 
 **coolTLUSTY_tables**: directory containing pre-tabulated values needed for coolTLUSTY runs. These include: chemical abundances, gas-phase absorption opacities, rayleigh scattering, water-ice mie table
                    
-**opacity_analyzer.ipynb**: inspired by Caroline Morley's opacity-wizard, this notebook shows some examples of comparing the relative contributions of different opacity sources for a given temperature, pressure, and chemical composition
+**opacity_analyzer.ipynb**: inspired by Caroline Morley's opacity-wizard, this notebook shows some examples of comparing the relative contributions of different opacity sources for a given temperature, pressure, and chemical composition. Intended as a quick start guide for the user to modify and examine their own cases of interest.
 
 **construct_coolTLUSTY_opacity_table.py**: script to construct an opacity table for use with coolTLUSTY given either a coolTLUSTY-format 
  abundance table, or a Sonora-Bobcat format abundance table. 
